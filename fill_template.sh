@@ -16,12 +16,12 @@ read email
 
 echo "Patching files..."
 
-sed -i "s/eframe_template/$crate/g" Cargo.toml
-sed -i "s/eframe_template/$crate/g" src/main.rs
-sed -i "s/eframe template/$crate/g" index.html
-sed -i "s/eframe_template/$crate/g" assets/sw.js
-sed -i "s/Emil Ernerfeldt/$name/g" Cargo.toml
-sed -i "s/emil.ernerfeldt@gmail.com/$email/g" Cargo.toml
+sed -i '' -e "s/eframe_template/$crate/g" Cargo.toml
+sed -i '' -e "s/eframe_template/$crate/g" src/main.rs
+sed -i '' -e "s/eframe template/$crate/g" index.html
+sed -i '' -e "s/eframe_template/$crate/g" assets/sw.js
+sed -i '' -e "s/Emil Ernerfeldt/$name/g" Cargo.toml
+sed -i '' -e "s/emil.ernerfeldt@gmail.com/$email/g" Cargo.toml
 
 echo "Done."
 
